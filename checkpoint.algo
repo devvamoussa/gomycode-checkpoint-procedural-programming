@@ -1,0 +1,61 @@
+ALGORITHM dot_product
+VAR
+    tableau1,tableau2 : ARRAY_OF type[50];
+    ps, V1 ,V2:INTEGER
+BEGIN
+    ps:=0
+    FOR i FROM 1 TO  V1 leng(tableau1)-1 STEP DO
+        FOR j FROM 1 TO V2 leng(tableau2)-1 STEP DO 
+        IF (i==j)
+            ps +:= V1[i]*V2[J]
+            ELSE
+                PASS
+        END_IF
+    END_FOR
+END
+
+
+
+
+ALGORITHM vect_artho
+VAR
+tableau,tableau1 , tableau2 : ARRAY_OF type[50];
+px, V1 ,V2 : INTEGER; 
+BEGIN
+Write("veullez entre des nombre paire ")
+    Read(paire);
+    FOR i FROM 0 TO paire leng(tableau) STEP 1  DO
+        IF (V1,V2:=paire[i]) THEN
+            FOR i FROM 1 TO V1 leng(tableau1)-1  STEP DO
+                FOR j FROM 1 TO V2 leng(tableau2)-1 STEP DO 
+                    IF (i==j)THEN
+                            ps +:= V1[i]*V2[J]
+                    END_IF
+                END_FOR
+            END_FOR
+                IF (ps:=>0);
+                    Write("cette paire de vecteurs est orthogonale")
+                ELSE
+                        Write("vecteurs non orthogonaux")
+                END_IF
+        END_IF
+    END_FOR
+END
+
+ALGORITHM Function
+VAR
+tableau1 , tableau2 : ARRAY_OF type[50];
+px, V1 ,V2 : INTEGER; 
+BEGIN
+Funtion(tableau1 , tableau2)
+ps:=0
+FOR i FROM 1 TO  V1 leng(tableau1)-1 STEP DO
+    FOR j FROM 1 TO V2 leng(tableau2)-1 STEP DO 
+    IF (i==j)
+        ps +:= V1[i]*V2[J]
+        ELSE
+            PASS
+    END_IF
+END_FOR
+Return(px)
+END
